@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALMA DORADA | Wiki PRO Legend of Justice</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#020617;color:#eaeaea}
+header{background:linear-gradient(135deg,#020617,#1e293b);text-align:center;padding:60px}
+header h1{color:#facc15;font-size:44px;margin:0}
+header p{color:#cbd5f5;font-size:18px}
+nav{position:sticky;top:0;background:#020617;padding:12px;text-align:center;z-index:10}
+nav a{color:#38bdf8;margin:0 8px;text-decoration:none;font-weight:bold}
+nav a:hover{color:#facc15}
+section{max-width:1300px;margin:auto;padding:30px}
+h2{color:#facc15;border-bottom:2px solid #1e293b;padding-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{background:#020617;border-radius:16px;padding:18px;border:2px solid #1e293b;display:flex;flex-direction:column;align-items:center;text-align:center}
+.card img{width:120px;height:120px;border-radius:10px;margin-bottom:12px;object-fit:cover}
+.card h3{color:#38bdf8;margin:0 0 6px}
+.card p{font-size:13px;color:#cbd5f5;margin:0 0 6px}
+.tag{display:inline-block;background:#1e293b;padding:5px 10px;border-radius:12px;font-size:12px;color:#facc15;margin:3px 3px 0 0}
+footer{text-align:center;padding:25px;background:#020617;color:#64748b;font-size:14px}
+.search-container{text-align:center;margin-bottom:30px}
+.search-container input{padding:8px 12px;border-radius:12px;border:1px solid #64748b;width:250px;background:#1e293b;color:#eaeaea}
+</style>
+</head>
+<body>
+
+<header>
+<h1>ALMA DORADA</h1>
+<p>Wiki PRO – Saint Seiya: Legends of Justice</p>
+<p><strong>Líder del Clan:</strong> Raúl</p>
+</header>
+
+<section id="intro">
+<h2>🧠 Introducción</h2>
+<p>Bienvenido a la guía PRO del clan <strong>ALMA DORADA</strong>. Aquí encontrarás todos los personajes del juego, con imágenes genéricas, habilidades, sets recomendados, equipos estratégicos y guía completa para nuevos miembros.</p>
+</section>
+
+<section id="busqueda">
+<h2>🔍 Buscar Personaje</h2>
+<div class="search-container">
+<input type="text" id="searchInput" placeholder="Escribe el nombre del personaje..." onkeyup="filterCharacters()">
+</div>
+</section>
+
+<section id="personajes">
+<h2>📜 Personajes del Juego</h2>
+
+<div class="grid" id="characterGrid">
+
+<!-- BRONCE -->
+<div class="card" data-name="Seiya" data-category="Bronce">
+<img src="https://via.placeholder.com/120x120?text=Seiya" alt="Seiya">
+<h3>Seiya</h3>
+<p><strong>Rol:</strong> DPS principal</p>
+<p><strong>Habilidades:</strong> Meteoros de Pegaso, Cometa de Pegaso</p>
+<p><strong>Set recomendado:</strong> DPS crítico / velocidad</p>
+<span class="tag">Bronce</span>
+</div>
+
+<div class="card" data-name="Shiryu" data-category="Bronce">
+<img src="https://via.placeholder.com/120x120?text=Shiryu" alt="Shiryu">
+<h3>Shiryu</h3>
+<p><strong>Rol:</strong> Tanque / soporte</p>
+<p><strong>Habilidades:</strong> Dragón Ascendente, Cólera del Dragón</p>
+<p><strong>Set recomendado:</strong> Vida / defensa</p>
+<span class="tag">Bronce</span>
+</div>
+
+<div class="card" data-name="Ikki" data-category="Bronce">
+<img src="https://via.placeholder.com/120x120?text=Ikki" alt="Ikki">
+<h3>Ikki</h3>
+<p><strong>Rol:</strong> DPS / ataque fuerte</p>
+<p><strong>Habilidades:</strong> Ave Fénix, Golpe Fantasma</p>
+<p><strong>Set recomendado:</strong> Crítico / Daño</p>
+<span class="tag">Bronce</span>
+</div>
+
+<!-- PLATA -->
+<div class="card" data-name="Shaina" data-category="Plata">
+<img src="https://via.placeholder.com/120x120?text=Shaina" alt="Shaina">
+<h3>Shaina</h3>
+<p><strong>Rol:</strong> DPS</p>
+<p><strong>Habilidades:</strong> Ataque Serpiente, Agilidad superior</p>
+<p><strong>Set recomendado:</strong> Crítico / daño rápido</p>
+<span class="tag">Plata</span>
+</div>
+
+<div class="card" data-name="Misty" data-category="Plata">
+<img src="https://via.placeholder.com/120x120?text=Misty" alt="Misty">
+<h3>Misty</h3>
+<p><strong>Rol:</strong> DPS / util</p>
+<p><strong>Habilidades:</strong> Aguja de hielo, Control de agua</p>
+<p><strong>Set recomendado:</strong> Daño elemental / velocidad</p>
+<span class="tag">Plata</span>
+</div>
+
+<!-- ORO -->
+<div class="card" data-name="Shaka" data-category="Oro">
+<img src="https://via.placeholder.com/120x120?text=Shaka" alt="Shaka">
+<h3>Shaka</h3>
+<p><strong>Rol:</strong> Control potente</p>
+<p><strong>Habilidades:</strong> Tesoro del Cielo, Ritual de 1000 Budas</p>
+<p><strong>Set recomendado:</strong> Control / daño mágico</p>
+<span class="tag">Oro</span>
+</div>
+
+<div class="card" data-name="Saga" data-category="Oro">
+<img src="https://via.placeholder.com/120x120?text=Saga" alt="Saga">
+<h3>Saga</h3>
+<p><strong>Rol:</strong> DPS / Control</p>
+<p><strong>Habilidades:</strong> Explosión Galáctica, Genro Maoh</p>
+<p><strong>Set recomendado:</strong> Crítico / control</p>
+<span class="tag">Oro</span>
+</div>
+
+<!-- GOD CLOTH -->
+<div class="card" data-name="Seiya God Cloth" data-category="God Cloth">
+<img src="https://via.placeholder.com/120x120?text=Seiya+God" alt="Seiya God Cloth">
+<h3>Seiya (God Cloth)</h3>
+<p><strong>Rol:</strong> DPS principal</p>
+<p><strong>Habilidades:</strong> Meteoro de Pegaso divino</p>
+<p><strong>Set recomendado:</strong> Crítico / velocidad / daño divino</p>
+<span class="tag">God Cloth</span>
+</div>
+
+<!-- DIOS -->
+<div class="card" data-name="Athena" data-category="Dios">
+<img src="https://via.placeholder.com/120x120?text=Athena" alt="Athena">
+<h3>Athena</h3>
+<p><strong>Rol:</strong> Soporte / curación</p>
+<p><strong>Habilidades:</strong> Orbe de curación, Protección divina</p>
+<p><strong>Set recomendado:</strong> Curación / defensa</p>
+<span class="tag">Dios</span>
+</div>
+
+<!-- MARINOS -->
+<div class="card" data-name="Kraken Isaac" data-category="Marino">
+<img src="https://via.placeholder.com/120x120?text=Kraken+Isaac" alt="Kraken Isaac">
+<h3>Kraken Isaac</h3>
+<p><strong>Rol:</strong> DPS marino</p>
+<p><strong>Habilidades:</strong> Tentáculo marino, Golpe acuático</p>
+<p><strong>Set recomendado:</strong> Daño elemental / control</p>
+<span class="tag">Marino</span>
+</div>
+
+<!-- ESPECTROS -->
+<div class="card" data-name="Radamanthys" data-category="Espectro">
+<img src="https://via.placeholder.com/120x120?text=Radamanthys" alt="Radamanthys">
+<h3>Radamanthys</h3>
+<p><strong>Rol:</strong> Tanque / daño</p>
+<p><strong>Habilidades:</strong> Puño oscuro, Defensa espectral</p>
+<p><strong>Set recomendado:</strong> Defensa / vida</p>
+<span class="tag">Espectro</span>
+</div>
+
+</div>
+</section>
+
+<section id="equipos">
+<h2>⚔️ Equipos Recomendados</h2>
+<p>Balancear roles: 2 tanques al frente, DPS atrás, soporte/curación. Sinergias elementales maximizan daño y supervivencia.</p>
+<ul>
+<li>Equipo Balanceado: Frontline (tanque + DPS secundario), Backline (DPS principal + soporte)</li>
+<li>Ejemplo Agua/Fuego: Moses + Shaina + Deathmask + Ikki + Aioria</li>
+<li>Tanque/DPS: Doko + Athena + Saga + Mu + Shaka</li>
+</ul>
+</section>
+
+<section id="tier">
+<h2>📊 Tier List (Meta)</h2>
+<ul>
+<li><strong>S Tier:</strong> Saga, Shaka, Aldebarán, Dohko, Mu</li>
+<li><strong>A Tier:</strong> Athena, Aioria, Misty, Shura</li>
+<li><strong>B Tier:</strong> Moses, Camus, Afrodita, Shaina</li>
+<li><strong>C Tier:</strong> Black Pegasus, Black Dragon, Ichi, Nachi</li>
+</ul>
+</section>
+
+<section id="guia">
+<h2>📜 Guía para Nuevos Miembros</h2>
+<ul>
+<li>Sube primero Tier S y A</li>
+<li>Mantén sets completos para mejores bonuses</li>
+<li>Forma equipos balanceados por roles y elementos</li>
+</ul>
+</section>
+
+<footer>
+ALMA DORADA © Wiki PRO Legends of Justice – Líder: Raúl
+</footer>
+
+<script>
+function filterCharacters(){
+  const input=document.getElementById('searchInput').value.toLowerCase();
+  const cards=document.querySelectorAll('#characterGrid .card');
+  cards.forEach(card=>{
+    const name=card.dataset.name.toLowerCase();
+    card.style.display=name.includes(input)?'flex':'none';
+  });
+}
+</script>
+
+</body>
+</html>
